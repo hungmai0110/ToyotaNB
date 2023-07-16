@@ -1,0 +1,168 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;700&display=swap");
+header {
+  height: 100px;
+  background-color: aqua;
+}
+
+:root {
+  --text-red: #eb1b2e;
+  --color-white: #fff;
+  --color-black: #000;
+  --bg-gray: #e0e0e0;
+}
+
+body {
+  font-family: "Quicksand", sans-serif;
+  margin: 0;
+}
+body .layout-content {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+body .items-center {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.products-page .banner {
+  max-width: 1600px;
+  margin: 0 auto;
+}
+.products-page .banner .banner-img img {
+  width: 100%;
+  height: 100%;
+}
+.products-page .banner .banner-content {
+  padding: 35px 0;
+}
+.products-page .banner .banner-content .banner-list-card {
+  display: flex;
+  justify-content: space-between;
+  max-width: 500px;
+  margin: 0 auto;
+}
+.products-page .banner .banner-content .banner-list-card .banner-card {
+  display: flex;
+}
+.products-page .banner .banner-content .banner-list-card .banner-card img {
+  width: 50px;
+  height: 50px;
+  margin-right: 10px;
+}
+.products-page .product-price {
+  color: var(--text-red);
+  font-size: 18px;
+  font-weight: 700;
+}
+.products-page .block-tittle {
+  font-size: 32px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+.products-page .fs-italic {
+  font-style: italic;
+  margin: 8px 0;
+}
+.products-page .bg-gray {
+  background-color: var(--bg-gray);
+}
+.products-page .text-red {
+  color: #eb1b2e;
+}
+.products-page .option-black-218 {
+  background-color: #030304;
+}
+.products-page .option-black-222 {
+  background-color: #1a191c;
+}
+.products-page .option-red-3T3 {
+  background-color: #7a2438;
+}
+.products-page .option-white {
+  background-color: #fbfafa;
+}
+
+.products-page .product-detail {
+  display: grid;
+  grid-template-columns: 60% 40%;
+  padding: 50px 0;
+}
+.products-page .product-detail .product-img .product-text-color {
+  font-weight: 700;
+  margin: 30px 0 15px;
+}
+.products-page .product-detail .product-img #color-options {
+  display: flex;
+  gap: 20px;
+}
+.products-page .product-detail .product-img #color-options .option {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: 1px solid #cccccc;
+  cursor: pointer;
+}
+.products-page .product-detail .product-content .product-des {
+  font-weight: 500;
+}
+.products-page .product-detail .product-content .product-price {
+  font-size: 22px;
+}
+.products-page .product-detail .product-content ul {
+  padding-left: 15px;
+}
+.products-page .product-detail .product-content ul li {
+  padding-bottom: 6px;
+}
+.products-page .list-type {
+  padding-bottom: 50px;
+}
+.products-page .list-type .list-product-card {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+.products-page .list-type .list-product-card .product-card .product-card__img img {
+  width: 100%;
+  padding: 25px 0;
+  transition: transform 0.3s ease;
+}
+.products-page .list-type .list-product-card .product-card .product-card__img img:hover {
+  transform: scale(1.2);
+}
+.products-page .list-type .list-product-card .product-card .product-card__content h3 {
+  font-size: 22px;
+}
+.products-page .list-type .list-product-card .product-card .product-card__content span {
+  display: flex;
+  align-items: center;
+}
+.products-page .list-type .list-product-card .product-card .product-card__content span p {
+  margin: 0 0 0 10px;
+}
+.products-page .list-type .list-product-card .product-card .product-card__content ul {
+  padding-left: 15px;
+  margin: 24px 0;
+}
+.products-page .list-type .list-product-card .product-card .product-card__content ul li {
+  margin-bottom: 6px;
+}
+.products-page .list-type .list-product-card .product-card .product-card__content .product-card__btn {
+  display: flex;
+  justify-content: space-between;
+}
+.products-page .list-type .list-product-card .product-card .product-card__content .product-card__btn .btn-service {
+  cursor: pointer;
+  font-weight: 700;
+  color: var(--color-white);
+  background-color: var(--color-black);
+  border: 1px solid var(--color-black);
+  border-radius: 4px;
+  padding: 10px 40px;
+}
+.products-page .list-type .list-product-card .product-card .product-card__content .product-card__btn .btn-service:hover {
+  color: var(--color-black);
+  background-color: var(--color-white);
+}/*# sourceMappingURL=style.css.map */
