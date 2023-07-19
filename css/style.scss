@@ -308,7 +308,8 @@ body {
   }
 }
 
-.products-page.wigo {
+.products-page.wigo,
+.products-page.yaris {
   .product-detail {
     .product-img {
       img {
@@ -316,6 +317,9 @@ body {
       }
     }
   }
+}
+
+.products-page.wigo {
   .list-type .list-product-card .product-card .product-card__img img {
     width: 80%;
     padding-top: 0;
