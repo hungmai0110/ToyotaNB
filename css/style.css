@@ -291,9 +291,11 @@ body .items-center {
   line-height: 28px;
 }
 
-.products-page.wigo .product-detail .product-img img {
+.products-page.wigo .product-detail .product-img img,
+.products-page.yaris .product-detail .product-img img {
   width: 75%;
 }
+
 .products-page.wigo .list-type .list-product-card .product-card .product-card__img img {
   width: 80%;
   padding-top: 0;
