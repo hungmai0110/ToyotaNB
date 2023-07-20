@@ -11,16 +11,21 @@ const productTextColor = document.querySelector(
 const questionCard = document.querySelectorAll(".questions .question-card");
 
 // 1. Khi chọn màu ô tô: Lặp qua mỗi lựa chọn và thêm sự kiện click
-for (let i = 0; i < colorOptions.length; i++) {
-  colorOptions[i].addEventListener("click", function () {
+colorOptions.forEach((option) => {
+  option.addEventListener("click", () => {
+    // Xóa lớp 'clicked' nếu nó đã có trước đó
+    colorOptions.forEach((option) => option.classList.remove("option-clicked"));
     // Lấy đường dẫn ảnh và text
-    const selectedImage = this.getAttribute("data-image");
-    const selectedTextColor = this.getAttribute("data-text");
+    const selectedImage = option.getAttribute("data-image");
+    const selectedTextColor = option.getAttribute("data-text");
+
+    // Thêm lớp 'clicked' cho hình tròn được click
+    option.classList.add("option-clicked");
     // Thay đổi ảnh và text
     productImage.src = selectedImage;
     productTextColor.innerHTML = selectedTextColor;
   });
-}
+});
 
 // 2. Khi xem thêm Câu hỏi thường gặp
 for (let i = 0; i < questionCard.length; i++) {
