@@ -30,28 +30,24 @@ colorOptions.forEach((option) => {
 // 2. Khi xem thêm Câu hỏi thường gặp
 for (let i = 0; i < questionCard.length; i++) {
   questionCard[i].addEventListener("click", function () {
-    const iconMinus = questionCard[i].querySelector(".fa-circle-minus");
-    const iconPlus = questionCard[i].querySelector(".fa-circle-plus");
+    const iconChevron = questionCard[i].querySelector(
+      ".fa-circle-chevron-right"
+    );
     const questionCardDes = questionCard[i].querySelector(
       ".question-card__des"
     );
-    const questionCardTitle = questionCard[i].querySelector(
-      ".question-card__title h4"
-    );
 
-    if (
-      questionCardDes.style.display === "none" ||
-      questionCardDes.style.display === ""
-    ) {
-      iconPlus.style.display = "none";
-      iconMinus.style.display = "block";
-      questionCardDes.style.display = "block";
-      questionCardTitle.classList.add("text-active");
-    } else {
-      iconPlus.style.display = "block";
-      iconMinus.style.display = "none";
-      questionCardDes.style.display = "none";
-      questionCardTitle.classList.remove("text-active");
-    }
+    questionCardDes.classList.toggle("show-des");
+    iconChevron.classList.toggle("active");
   });
 }
+
+// animation
+const animation = ScrollReveal({
+  distance: "50px",
+  duration: 2000,
+  delay: 200,
+  reset: true,
+});
+
+animation.reveal(".products-page .product-infor", { origin: "top" });
