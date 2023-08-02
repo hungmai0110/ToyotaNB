@@ -340,6 +340,10 @@ body .items-center {
   height: 56px;
 }
 
+.land-cruiser.products-page .product-detail .product-img img {
+  max-width: 100%;
+}
+
 @media only screen and (max-width: 1280px) {
   .layout-content {
     width: 90%;
@@ -377,7 +381,7 @@ body .items-center {
     display: none;
   }
   .products-page .product-detail .product-img #color-options {
-    max-width: 298px;
+    max-width: 300px;
     gap: 12px;
   }
   .products-page .product-detail .product-img #color-options .option {
