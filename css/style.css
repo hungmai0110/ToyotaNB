@@ -352,7 +352,7 @@ body .items-center {
 @media only screen and (max-width: 992px) {
   .products-page .product-detail .product-img #color-options {
     flex-wrap: wrap;
-    max-width: 380px;
+    max-width: 302px;
   }
   .products-page.wigo .product-detail .product-img img,
   .products-page.yaris .product-detail .product-img img {
@@ -438,4 +438,8 @@ body .items-center {
   .products-page .incentives .incentives__container .incentives__card .card-container .contact-me a {
     margin: 0;
   }
-}/*# sourceMappingURL=style.css.map */
+  .products-page .product-detail .product-img #color-options {
+    flex-wrap: wrap;
+    max-width: 238px;
+  }
+}
