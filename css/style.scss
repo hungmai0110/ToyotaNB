@@ -388,7 +388,7 @@ body {
 @media only screen and (max-width: 992px) {
   .products-page .product-detail .product-img #color-options {
     flex-wrap: wrap;
-    max-width: 380px;
+    max-width: 302px;
   }
   .products-page.wigo .product-detail .product-img img,
   .products-page.yaris .product-detail .product-img img {
@@ -492,5 +492,10 @@ body {
     a {
       margin: 0;
     }
+  }
+
+  .products-page .product-detail .product-img #color-options {
+    flex-wrap: wrap;
+    max-width: 238px;
   }
 }
