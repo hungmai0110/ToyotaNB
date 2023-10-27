@@ -117,6 +117,7 @@ body .items-center {
 }
 .products-page .product-detail .product-content h1 {
   margin-top: 0;
+  text-transform: uppercase;
 }
 .products-page .product-detail .product-content .product-des {
   font-weight: 500;
@@ -442,4 +443,4 @@ body .items-center {
     flex-wrap: wrap;
     max-width: 238px;
   }
-}
+}/*# sourceMappingURL=style.css.map */
